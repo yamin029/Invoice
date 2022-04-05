@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const customersController = require('../../controllers/customersController')
+const customerDetailsController = require('../../controllers/customerDetailsController')
 
 router.route('/')
-    .get(customersController.getCustomerDetails)
-    .post(customersController.handleNewCustomerDetails)
+    .get(customerDetailsController.getCustomerDetails)
+    .post(customerDetailsController.handleNewCustomerDetails)
 
 
 module.exports = router;

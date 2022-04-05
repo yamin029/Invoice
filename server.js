@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.use('/customers', require('./routes/api/customers'));
 app.use('/customerDetails', require('./routes/api/customerDetails'));
-app.use('/createInvoice', require('./routes/api/invoice'))
+app.use('/invoice', require('./routes/api/invoice'))
 
 
 //common routing for all of the route that did not match the previous conditions
